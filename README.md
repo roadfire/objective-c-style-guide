@@ -1,4 +1,4 @@
-# NYTimes Objective-C Style Guide
+# Roadfire Software Objective-C Style Guide
 
 This style guide outlines the coding conventions of the iOS team at The New York Times. We welcome your feedback in [issues](https://github.com/NYTimes/objetive-c-style-guide/issues), [pull requests](https://github.com/NYTimes/objetive-c-style-guide/pulls) and [tweets](https://twitter.com/nytimesmobile). Also, [we're hiring](http://jobs.nytco.com/job/New-York-iOS-Developer-Job-NY/2572221/).
 
@@ -54,14 +54,16 @@ UIApplication.sharedApplication.delegate;
 ## Spacing
 
 * Indent using 4 spaces. Never indent with tabs. Be sure to set this preference in Xcode.
-* Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
+* Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on a new line and close on a new line.
 
 **For example:**  
 ```objc
-if (user.isHappy) {
+if (user.isHappy)
+{
 //Do something
 }
-else {
+else
+{
 //Do something else
 }
 ```
@@ -74,7 +76,8 @@ Conditional bodies should always use braces even when a conditional body could b
 
 **For example:**
 ```objc
-if (!error) {
+if (!error)
+{
     return success;
 }
 ```
@@ -107,11 +110,11 @@ result = a > b ? x = c > d ? c : d : y;
 
 ## Methods
 
-In method signatures, there should be a space after the scope (-/+ symbol). There should be a space between the method segments.  
+In method signatures, there should be a space after the scope (-/+ symbol). There should be a space after the closing parenthesis that specifies the return type. There should be a space between the method segments.
 
 **For Example**:  
 ```objc  
-- (void)setExampleText:(NSString *)text image:(UIImage *)image;
+- (void) setExampleText:(NSString *)text image:(UIImage *)image;
 ```
 ## Variables
 
@@ -157,12 +160,12 @@ UIButton *settingsButton;
 UIButton *setBut;
 ```
 
-A three letter prefix (e.g. `NYT`) should always be used for class names and constants, however may be omitted for Core Data entity names. Constants should be camel-case with all words capitalized and prefixed by the related class name for clarity. 
+A three letter prefix (e.g. `RFS`) should always be used for class names and constants, however may be omitted for Core Data entity names. Constants should be camel-case with all words capitalized and prefixed by the related class name for clarity. 
 
 **For example:**  
 
 ```objc
-static const NSTimeInterval NYTArticleViewControllerNavigationFadeAnimationDuration = 0.3;
+static const NSTimeInterval RFSArticleViewControllerNavigationFadeAnimationDuration = 0.3;
 ```
 
 **Not:**
