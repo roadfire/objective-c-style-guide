@@ -1,6 +1,6 @@
 # Roadfire Software Objective-C Style Guide
 
-This style guide outlines the coding conventions of the iOS team at Roadfire Software. We welcome your feedback in [issues](https://github.com/roadfire/objetive-c-style-guide/issues), [pull requests](https://github.com/roadfire/objetive-c-style-guide/pulls) and [tweets](https://twitter.com/jtbrown).
+This style guide outlines the coding conventions of the iOS team at Roadfire Software. We welcome your feedback in [issues](https://github.com/roadfire/objective-c-style-guide/issues), [pull requests](https://github.com/roadfire/objective-c-style-guide/pulls) and [tweets](https://twitter.com/jtbrown).
 
 Thanks to all of [our contributors](https://github.com/roadfire/objective-c-style-guide/contributors).
 
